@@ -1,7 +1,7 @@
 {
   "name": "react-native-hold-to-call-button",
   "title": "React Native Hold to Call Button",
-  "version": "0.2.0-beta.1",
+  "version": "1.0.0",
   "description": "React Native button where the user has to hold the button in order to call the onPress function",
   "main": "index.tsx",
   "author": {
