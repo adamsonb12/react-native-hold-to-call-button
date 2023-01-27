@@ -52,8 +52,11 @@ export const App = () => {
         //  do something cool
       }}
       // customization options
+      pressDownDurationMilliseconds={1500} // change time it takes to call onHoldFinished
       primaryColor="pink" // animation color
       inactiveColor="red" // button background when not pressed down
+      disabled={false} // disabling prevents onHoldFinished from being called and from the animation starting
+      loading={false} // set true if your action onHoldFinished takes time
     >
       Hold to Confirm
     </HoldToCallButton>
