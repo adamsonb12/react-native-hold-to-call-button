@@ -69,4 +69,4 @@ Images of this library in use in production
 
 The animation is smoother in real life, the gif does not do it justice.
 
-![hold to call button](https://play-lh.googleusercontent.com/Fm3fK0INdAjdnJIYPmeKjd07KLttf6RhBuLy51BEVg4nETv5xxxG6tl1AanH9BQ0NQ=w2560-h1440-rw)
+![hold to call button](https://raw.githubusercontent.com/adamsonb12/react-native-hold-to-call-button/main/images/hold-to-call.gif)
