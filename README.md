@@ -57,6 +57,9 @@ export const App = () => {
       inactiveColor="red" // button background when not pressed down
       disabled={false} // disabling prevents onHoldFinished from being called and from the animation starting
       loading={false} // set true if your action onHoldFinished takes time
+      fontFamily={fonts.bold} // set the font to your apps theme
+      fontSize={10} // change font size
+      borderRadius={50} // custom button border radius
     >
       Hold to Confirm
     </HoldToCallButton>

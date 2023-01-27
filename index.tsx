@@ -1,5 +1,5 @@
 import { ReactNode, useState } from "react";
-import { Platform, TouchableOpacity, Text } from "react-native";
+import { Platform, Text, View } from "react-native";
 import { LongPressGestureHandler, State } from "react-native-gesture-handler";
 import Animated, {
   Easing,
@@ -17,6 +17,9 @@ export const HoldToCallButton = ({
   // customization
   primaryColor = "#17213B",
   inactiveColor = "#FFF",
+  fontFamily = "normal",
+  fontSize = 16,
+  borderRadius = 10,
   ...props
 }: {
   children: ReactNode;
@@ -27,6 +30,9 @@ export const HoldToCallButton = ({
   // customization
   primaryColor?: string;
   inactiveColor?: string;
+  fontFamily?: string;
+  fontSize?: number;
+  borderRadius?: number;
 }) => {
   const [animationStatus, setAnimationStatus] = useState(false);
   const animation = useSharedValue({ width: "0%" });
@@ -71,7 +77,7 @@ export const HoldToCallButton = ({
       }}
       minDurationMs={pressDownDurationMilliseconds}
     >
-      <TouchableOpacity
+      <View
         {...props}
         style={{
           width: "100%",
@@ -82,7 +88,7 @@ export const HoldToCallButton = ({
           backgroundColor: loading ? primaryColor : inactiveColor,
           paddingTop: 12,
           paddingBottom: 12,
-          borderRadius: 10,
+          borderRadius,
           overflow: "hidden",
           borderStyle: "solid",
           borderWidth: Platform.OS === "ios" ? 1 : 0,
@@ -105,7 +111,7 @@ export const HoldToCallButton = ({
               left: 0,
               top: 0,
               bottom: 0,
-              borderRadius: 50,
+              borderRadius,
               backgroundColor: primaryColor,
             },
             animationStyle,
@@ -114,11 +120,13 @@ export const HoldToCallButton = ({
         <Text
           style={{
             color: animationStatus ? inactiveColor : primaryColor,
+            fontFamily: fontFamily,
+            fontSize: fontSize,
           }}
         >
           {children}
         </Text>
-      </TouchableOpacity>
+      </View>
     </LongPressGestureHandler>
   );
 };
