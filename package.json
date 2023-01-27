@@ -1,0 +1,58 @@
+{
+  "name": "react-native-hold-to-call-button",
+  "title": "React Native Hold to Call Button",
+  "version": "0.1.0",
+  "description": "React Native button where the user has to hold the button in order to call the onPress function",
+  "main": "index.tsx",
+  "author": {
+    "name": "Brett Adamson",
+    "email": "adamsonb12@gmail.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.tsx"
+  ],
+  "scripts": {
+    "check.types": "tsc",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.json",
+    "lint.fix": "eslint . --ext .ts,.tsx,.js,.jsx,.json --fix",
+    "format": "prettier --check .",
+    "format.fix": "prettier --write ."
+  },
+  "license": "ISC",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "react-native",
+    "react-native-hold-to-call-button",
+    "hold to call",
+    "delayed button",
+    "hold to confirm button",
+    "react native button",
+    "button"
+  ],
+  "devDependencies": {
+    "@tsconfig/react-native": "^2.0.3",
+    "@types/jest": "^29.2.5",
+    "@types/react": "^18.0.27",
+    "@types/react-native": "^0.71.0",
+    "@types/react-test-renderer": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "react": ">= 18.0.0",
+    "react-dom": "^18.2.0",
+    "react-native": ">= 0.70.5"
+  },
+  "dependencies": {
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-reanimated": "^2.14.4"
+  }
+}
