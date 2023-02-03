@@ -102,6 +102,7 @@ export const HoldToCallButton = ({
           shadowRadius: 2.22,
           shadowColor: "#000",
           elevation: 3,
+          zIndex: -1
         }}
       >
         <Animated.View
